@@ -40,8 +40,14 @@
 
 
 public class PrimeSieve {
-    public static void main(String[] args) { 
-        int N = Integer.parseInt(args[0]);
+    int N;
+
+    public PrimeSieve(int numSearch) {
+        this.N = numSearch;
+    }
+
+    public int returnNumOfPrimes() {
+        //int N = Integer.parseInt(args[0]);
 
         // initially assume all integers are prime
         boolean[] isPrime = new boolean[N + 1];
@@ -66,6 +72,7 @@ public class PrimeSieve {
         for (int i = 2; i <= N; i++) {
             if (isPrime[i]) primes++;
         }
-        System.out.println("The number of primes <= " + N + " is " + primes);
+        //System.out.println("The number of primes <= " + N + " is " + primes);
+        return primes;
     }
 }
