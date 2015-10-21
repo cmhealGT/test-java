@@ -70,7 +70,9 @@ public class PrimeSieve {
         // count primes
         int primes = 0;
         for (int i = 2; i <= N; i++) {
-            if (isPrime[i]) primes++;
+            if (isPrime[i]) {
+                primes++;
+            }
         }
         //System.out.println("The number of primes <= " + N + " is " + primes);
         return primes;
