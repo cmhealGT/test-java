@@ -74,7 +74,6 @@ public class PrimeSieve {
                 primes++;
             }
         }
-        //System.out.println("The number of primes <= " + N + " is " + primes);
         return primes;
     }
 }
