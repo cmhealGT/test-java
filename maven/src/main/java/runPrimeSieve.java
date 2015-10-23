@@ -8,8 +8,8 @@ public class runPrimeSieve {
     public static void main(String[] args) {
         //int number = Integer.parseInt(args[0]);
         int number;
-        for(int i = 1; i <= 9; i++){
-            number = (int) Math.pow(10,i);
+        for (int i = 1; i <= 9; i++) {
+            number = (int) Math.pow(10, i);
             int result = returnNumOfPrimes(number);
             System.out.println("There are " + result + " primes less than 10^" + i + " = " + (double) result / number);
         }
@@ -22,6 +22,7 @@ public class runPrimeSieve {
 
     private static int countOfPrimesLessThan(int n) {
         boolean[] isPrime = new boolean[n + 1];
+        //isPrime[1] = false;
         for (int i = 2; i <= n; i++) {
             isPrime[i] = true;
         }
