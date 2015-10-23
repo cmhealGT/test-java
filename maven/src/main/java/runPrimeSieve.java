@@ -8,9 +8,9 @@ public class runPrimeSieve {
         int number = 100;
         PrimeSieve sieve = new PrimeSieve(number);
         int result = sieve.returnNumOfPrimes(number);
-        System.out.println("The number of primes less than " + number + " is " + result);
+        System.out.println("There are " + result + " less than  " + number);
         number = 800;
         result = sieve.returnNumOfPrimes(800);
-        System.out.println("The number of primes less than " + number + " is " + result);
+        System.out.println("There are " + result + " less than  " + number);
     }
 }
